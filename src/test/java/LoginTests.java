@@ -1,14 +1,12 @@
 import Base.BasePage;
 import Pages.LoginPage;
-import Pages.MainPage;
-import Pages.RegisterPage;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class LoginTests extends BasePage{
 
     LoginPage loginPage = new LoginPage();
 
-    @Test
+    @Test(description = "Login Test - TC0002")
     public void TC0002() throws Exception{
         String user = randomUser();
 
@@ -19,7 +17,7 @@ public class LoginTests extends BasePage{
                 .loginControl("Welcome User QA");
     }
 
-    @Test
+    @Test(description = "Login Test - TC0003")
     public void TC0003() throws Exception{
         String user = randomUser();
 

@@ -1,14 +1,14 @@
 import Base.BasePage;
 import Pages.MainPage;
 import Pages.RegisterPage;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class RegisterTests extends BasePage{
 
     MainPage mainPage = new MainPage();
     RegisterPage registerPage = new RegisterPage();
 
-    @Test
+    @Test(description = "Register Test - TC0001")
     public void TC0001() {
         String userName = "userQA" + randomNumber();
 
